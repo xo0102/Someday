@@ -1,0 +1,131 @@
+.container{
+    width: 1280px;
+    height: 720px;
+    box-sizing: border-box;
+    border-color: transparent;
+    display: flex;
+    margin: auto;
+}
+
+.left_side{
+    width: 288px;
+    height: 100%;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ada8f9;
+}
+
+.right_side{
+    width: 992px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ada8f9;
+}
+
+.back_arrow {
+    width: 22px;
+    height: auto;
+
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.manager {
+    width: 216px;
+    height: 216px;
+    border-radius: 100%;
+    border-color: #ada8f9;
+    border-style: solid;
+    border-width: 10px;
+
+
+    position: relative;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+
+
+.name{
+    position: relative;
+    top: 108px;
+    left: 76px;
+}
+
+.name2{
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    line-height: 40px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.right_side_background{
+    width: 992px;
+    height: 992px;
+    background: #cac7ed;
+    border-radius: 80% 0% 0% 0%;
+    position: relative;
+    display: felx;
+}
+
+.nameback{
+    position: absolute;
+    width: 328px;
+    height: 130px;
+    top: 32px;
+    right: 32px;
+}
+
+.namee{
+    position: absolute;
+    right: 100px;
+    top: 60px;
+    margin: 0;
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: 800;
+    text-shadow:
+        -5px -5px 0 #ada8f9,
+         5px -5px 0 #ada8f9,
+        -5px  5px 0 #ada8f9,
+         5px  5px 0 #ada8f9,
+         0px -5px 0 #ada8f9,
+         0px  5px 0 #ada8f9,
+        -5px  0px 0 #ada8f9,
+         5px  0px 0 #ada8f9;
+}
+
+.act_section{
+    position: absolute;
+    top: 208px;
+    width: 636px;
+    left: 352px;
+    bottom: 0px;
+    display: flex;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.act_section::-webkit-search-decoration{
+    display:none;
+}
+
+.act_case{
+    width: 208px;
+    height: 784px;
+    margin-left: 104px;
+}
+
+
