@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Someday_home</title>
+    <link rel="stylesheet" href="js.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <p class="title_text" title="Someday">Someday</p>
+        <button class="button" onclick="movePage()">Someday</button>
+
+        <!-- 드롭다운 여는 버튼: id, class 추가 -->
+        <button class="button2 dropdown_button" id="dropdown_button">활동 기록</button>
+
+        <ul class="dropdown_menu" id="dropdown_menu">
+            <li class="dropdown_list" style="margin-top: 8px;">
+                <a href="../1회차_웹개발이란/naver.html">네이버</a>
+            </li>
+            <li class="dropdown_list">
+                <a href="../2회차_입출력/input.html">입출력</a>
+            </li>
+            <li class="dropdown_list">
+                <a href="../2회차_입출력/calculator.html">계산기</a>
+            </li>
+            <li class="dropdown_list">
+                <a href="../3회차_div 속 div/card.html">명함</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <img src="./img/1.jpg" class="picture">
+        <img src="./img/2.jpg" class="picture">
+        <img src="./img/3.jpg" class="picture">
+        <img src="./img/4.jpg" class="picture">
+        <img src="./img/5.jpg" class="picture">
+        <img src="./img/6.jpg" class="picture">
+        <img src="./img/7.jpg" class="picture">
+        <img src="./img/8.jpg" class="picture">
+        <img src="./img/9.jpg" class="picture">
+        <img src="./img/10.jpg" class="picture">
+        <img src="./img/11.jpg" class="picture">
+        <img src="./img/12.jpg" class="picture">
+        <img src="./img/13.png" class="picture">
+        <img src="./img/14.jpg" class="picture">
+        <img src="./img/15.jpg" class="picture">
+        <img src="./img/16.jpg" class="picture">
+        <img src="./img/17.jpg" class="picture">
+        <img src="./img/18.jpg" class="picture">
+        <img src="./img/19.jpg" class="picture">
+        <img src="./img/20.jpg" class="picture">
+        <img src="./img/21.png" class="picture">
+        <img src="./img/22.png" class="picture">
+        <img src="./img/23.png" class="picture">
+    </div>
+
+    <script>
+        function movePage() {
+            if (confirm("이동하 고 싶어요?")) {
+                location.href = "https://creamy-tim.github.io/Someday/index.html";
+            }
+        }
+
+        /* 변수 선언 */
+        const dropdown_button = document.getElementById("dropdown_button");
+        const dropdown_menu   = document.getElementById("dropdown_menu");
+
+        // 활동 기록 버튼 클릭시 작동
+        dropdown_button.addEventListener("click", (e) => {
+            e.stopPropagation();                      // 이 요소를 눌렀을 때만 처리
+            dropdown_menu.classList.toggle("open");   // 열려있으면 닫고, 닫혀있으면 열기
+        });
+
+        // 바깥 클릭시 드롭다운 닫기
+        document.addEventListener("click", (e) => {
+            if (!e.target.closest(".dropdown_button") && !e.target.closest(".dropdown_menu")) {
+                dropdown_menu.classList.remove("open");
+            }
+        });
+    </script>
+</body>
+</html>

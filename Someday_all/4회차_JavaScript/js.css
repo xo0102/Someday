@@ -1,0 +1,132 @@
+.header {
+    width: 1240px;
+    height: 40px;
+    background-color: #ada8f9;
+
+    position: relative;
+    top: 20px;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.title_text {
+    font-family: 'Abril Fatface';
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.title_text:hover {
+    font-weight: 600;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.button {
+    position: absolute;
+    right: 168px;
+    width: 132px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 글씨 가운데 정렬 추가 */
+
+    background-color: transparent;
+    border-color: #ffffff;
+    border-width: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;;
+
+    cursor: pointer;
+}
+
+.button2 {
+    position: absolute;
+    right: 20px;
+    width: 132px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 글씨 가운데 정렬 추가 */
+
+    background-color: transparent;
+    border-color: #ffffff;
+    border-width: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;;
+
+    cursor: pointer;
+}
+
+.dropdown_list {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.dropdown_menu {
+    width: 140px;
+    background: #ada8f9;
+
+    color: #ffffff;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);  /* 그림자 */
+    
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;  /* 자식 요소 세로로 정렬 */
+    box-sizing: border-box;  /* 패딩, 테두리가 크기에 영향 주지 않기 */
+
+    list-style: disc;  /* 드롭다운 왼쪽에 ● 모양 추가 */
+    z-index: 20;       /* 요소가 겹쳤을 때 위에 보이기 */
+    max-height: 0;     /* 최대 높이 0 (가렸다가 나중에 보여주기 위함) */
+    overflow: hidden;  /* 요소 안보이게 */
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.dropdown_menu.open {
+    transition: max-height 0.7s ease-in;
+    max-height: 100vh;
+}
+
+.main{
+    width: 1240px;
+    height: 572px;
+    border: #ada8f9 solid 2px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 24px;
+
+    overflow-y: auto;
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}
+
+.picture{
+    width: 244px;
+    height: 200px;
+}

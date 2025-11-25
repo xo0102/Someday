@@ -1,0 +1,66 @@
+.search {
+    width: 706px;
+    height: 52px;
+    background-color: white;
+
+    position: relative;
+    top: 52px;
+    left: 400px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 33px;
+    border-color: #03c75a;
+}
+
+.search_area {
+    position: absolute;
+    top: 52px;
+    left: 50%;
+
+    z-index: 10;
+
+    width: 706px;
+    height: 58px;
+
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+
+    background-color: #fff;
+
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.naver_logo {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 14px;
+    left: 32px;
+}
+
+.keyboard {
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    top: 19px;
+    left: 589px;
+}
+
+.dropdown {
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 23px;
+    left: 623px;
+}
+
+.search_img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 14px;
+    left: 644px;
+}

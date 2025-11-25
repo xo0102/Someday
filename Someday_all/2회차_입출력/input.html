@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파이썬 ㄱ나니</title>
+    <link href="./img/google_logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="input.css"/>
+</head>
+<body>
+    <input type="text" class="input_text" id="myInput" placeholder="이름을 적어주세요">
+    <button class="input_button" onclick="input()">입력완료</button>
+    <p class="print" id="print_text">출력결과</p>
+
+    <script>
+        function input ()
+        {
+            let inputValue = document.getElementById("myInput").value;
+            document.getElementById('print_text').innerText=inputValue;
+        }
+    </script>
+</body>
+</html>

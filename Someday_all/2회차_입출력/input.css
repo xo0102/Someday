@@ -1,0 +1,24 @@
+.input_text {
+    width: 150px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.input_button {
+    width: 80px;
+    height: 30px;
+    position: relative;
+    top: 100px;
+    left: 70px;
+}
+
+.print {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}

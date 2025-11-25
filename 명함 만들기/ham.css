@@ -1,0 +1,64 @@
+.card {
+    width: 270px;
+    height: 150px;
+    position: relative;
+    top:50px;
+    left:50px;
+    background: #Efa7b1;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.dora {
+    width: 60px;
+    height: 75px;
+    position: relative;
+    
+}
+
+.name {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.name2 {
+    font-size: 8px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.text_case{
+    width: 60px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card2 {
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+.name3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.name4 {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.info {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 2px;
+}

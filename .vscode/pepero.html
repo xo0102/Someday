@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>빼빼로 만들기</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      font-family: sans-serif;
+    }
+
+    .wrap {
+      width: 500px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* 빼빼로 전체 컨테이너 */
+    .pepero-box {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* 빼빼로 한 개 */
+    .pepero {
+      width: 30px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 막대(비스킷 부분) */
+    .stick {
+      width: 10px;
+      height: 70px;
+      background: #d3a86b; /* 비스킷색 */
+      border-radius: 10px;
+    }
+
+    /* 초코 코팅 부분 */
+    .choco {
+      width: 20px;
+      height: 120px;
+      background: #5b3628;
+      border-radius: 15px 15px 5px 5px;
+      position: relative;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    /* 토핑(아몬드 같은 느낌) */
+    .topping {
+      width: 6px;
+      height: 10px;
+      background: #dba96d;
+      border-radius: 3px;
+      position: absolute;
+    }
+
+    /* 위치 조금씩 다르게 주기 위해 클래스 나눔 */
+    .t1 { top: 10px; left: 3px; }
+    .t2 { top: 30px; right: 4px; }
+    .t3 { top: 55px; left: 6px; }
+    .t4 { top: 80px; right: 6px; }
+
+    /* 다른 맛(화이트 초코) */
+    .choco.white {
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">HTML로 만든 빼빼로 🍫</div>
+    <div class="pepero-box">
+      <!-- 기본 초코 빼빼로 -->
+      <div class="pepero">
+        <div class="choco">
+          <div class="topping t1"></div>
+          <div class="topping t2"></div>
+          <div class="topping t3"></div>
+          <div class="topping t4"></div>
+        </div>
+        <div class="stick"></div>
+      </div>
+
+      <!-- 토핑 없는 깔끔 초코 -->
+      <div class="pepero">
+        <div class="choco"></div>
+        <div class="stick"></div>
+      </div>
+
+      <!-- 화이트 초코 버전 -->
+      <div class="pepero">
+        <div class="choco white">
+          <div class="topping t1"></div>
+          <div class="topping t3"></div>
+        </div>
+        <div class="stick"></div>
+      </div>
+
+      <!-- 다시 기본 -->
+      <div class="pepero">
+        <div class="choco">
+          <div class="topping t1"></div>
+          <div class="topping t2"></div>
+        </div>
+        <div class="stick"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

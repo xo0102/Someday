@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김태훈의 계산기</title>
+    <link href = "./img/google_logo.png" rel = "shortcut icon" type = "image/x-icon">
+    <link rel = "stylesheet" href = "input.css"/>
+</head>
+<body>
+    <div class = "box1"></div>
+    <div class = "box2"></div>
+    <div class = "box3"></div>
+
+    <button class="input_button1" onclick="input()">+</button>
+    <button class="input_button2" onclick="input2()">AC</button>
+
+    <input type="text" class="input_number1" id="num1" placeholder="처음 숫자 입력하셈">
+    <input type="text" class="input_number2" id="num2" placeholder="다음 숫자 입력하셈">
+
+    <p class = "print" id = "print_num1">0</p>
+    <p class = "print2" id = "print_num2">0</p>
+
+    <script>
+        function input ()
+        {
+            let First = parseInt(document.getElementById("num1").value);
+            let Second = parseInt(document.getElementById("num2").value);
+            document.getElementById('print_num1').innerText=First+Second;
+            document.getElementById('print_num2').innerText=First+'+'+Second;
+        }
+
+         function input2 ()
+        {
+            let First = parseInt(document.getElementById("num1").value);
+            let Second = parseInt(document.getElementById("num2").value);
+            document.getElementById('print_num1').innerText="0"
+            document.getElementById('print_num2').innerText="0"
+        }
+
+
+        
+
+
+    </script>
+</body>
+</html>

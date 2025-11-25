@@ -1,0 +1,90 @@
+.container
+{
+    width: 380px;
+    height: 650px;
+    background-color: #000000;
+    position: relative;
+}
+
+.result_container
+{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.input_text
+{
+    color: #8E8D93;
+    font-size: 35px;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    margin: 0;
+}
+
+.result_text
+{
+    color: #FFFFFF;
+    font-size: 70px;
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    margin: 0;
+}
+
+.number_section
+{
+    width: 270px;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+}
+
+.inputbutten, .acbutten
+{
+    width: 245px;
+    height: 85px;
+    background-color: #2A2A2A;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    text-align: center;
+}
+
+.acbutten {
+    background-color: #5C5B60;
+    font-size: 30px;
+}
+
+.calculation_section
+{
+    width: 110px;
+    height: 400px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+}
+
+.cal_butten
+{
+    width: 85px;
+    height: 85px;
+    background-color: #FF9F0A;
+    
+    border: none;
+    border-radius: 50px;
+
+    color: white;
+    font-size: 30px;
+    
+    margin-bottom: 10px;
+}

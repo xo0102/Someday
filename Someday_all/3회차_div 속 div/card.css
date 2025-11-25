@@ -1,0 +1,63 @@
+.card {
+    width: 270px;
+    height: 150px;
+    background-color: #EFA7B1;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.picture {
+    width: 60px;
+    height: 75px;
+}
+
+.text_case {
+    width: 60px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.major {
+    font-size: 8px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.name {
+    color: #ffffff;
+    margin: 0px;
+}
+
+
+.info_case {
+    width: 150px;
+    height: 110px;
+    
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.company {
+    color: #ffffff;
+    margin: 0px;
+}
+
+.title {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.info {
+    font-size: 10px;
+    color: #ffffff;
+    margin: 0px;
+    margin-bottom: 2px;
+}
+
